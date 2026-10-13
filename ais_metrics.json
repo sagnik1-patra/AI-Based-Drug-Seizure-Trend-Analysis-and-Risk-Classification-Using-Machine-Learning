@@ -1,0 +1,76 @@
+{
+    "project": "AI-Based Drug Seizure Trend Analysis and Risk Classification",
+    "optimization": "Artificial Immune System",
+    "algorithm": "CLONALG-inspired Clonal Selection",
+    "generations": 15,
+    "population_size": 12,
+    "best_fitness": 0.5711462479728734,
+    "selected_features": [
+        "Previous_Log_Quantity"
+    ],
+    "best_antibody": {
+        "mask": [
+            0,
+            0,
+            0
+        ],
+        "n_estimators": 68,
+        "max_depth": 3,
+        "min_samples_leaf": 1
+    },
+    "training_samples": 50,
+    "testing_samples": 25,
+    "training_years": [
+        2021,
+        2022
+    ],
+    "testing_year": 2023,
+    "classification_thresholds_kg": {
+        "low": 7.893333333333332,
+        "medium": 252.26333333333298
+    },
+    "models": {
+        "AIS Random Forest": {
+            "accuracy": 0.52,
+            "precision": 0.54,
+            "recall": 0.52,
+            "f1_score": 0.47733333333333333
+        },
+        "Baseline Random Forest": {
+            "accuracy": 0.52,
+            "precision": 0.54,
+            "recall": 0.52,
+            "f1_score": 0.47733333333333333
+        },
+        "Decision Tree": {
+            "accuracy": 0.48,
+            "precision": 0.4955555555555556,
+            "recall": 0.48,
+            "f1_score": 0.40269230769230774
+        },
+        "Logistic Regression": {
+            "accuracy": 0.52,
+            "precision": 0.5532307692307693,
+            "recall": 0.52,
+            "f1_score": 0.493
+        }
+    },
+    "confusion_matrix": [
+        [
+            5,
+            1,
+            1
+        ],
+        [
+            2,
+            2,
+            7
+        ],
+        [
+            0,
+            1,
+            6
+        ]
+    ],
+    "evaluation_note": "Exploratory analysis on a small dataset. The volume classes do not measure real-world crime or public-health risk."
+}

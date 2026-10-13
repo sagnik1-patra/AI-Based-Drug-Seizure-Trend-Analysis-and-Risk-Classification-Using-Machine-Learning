@@ -1,0 +1,5 @@
+Model,Accuracy,Precision,Recall,F1_Score
+AIS Random Forest,0.52,0.54,0.52,0.47733333333333333
+Baseline Random Forest,0.52,0.54,0.52,0.47733333333333333
+Decision Tree,0.48,0.4955555555555556,0.48,0.40269230769230774
+Logistic Regression,0.52,0.5532307692307693,0.52,0.493

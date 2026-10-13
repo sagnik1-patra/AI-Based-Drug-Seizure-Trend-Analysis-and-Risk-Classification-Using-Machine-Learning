@@ -1,0 +1,26 @@
+Drug,Year,Quantity_Kg,Previous_Quantity,Actual_Class,RF_Predicted_Class,NN_Predicted_Class,Actual_Label,RF_Predicted_Label,NN_Predicted_Label
+Acetic Anhydride,2023,2.63,302.23,0,2,2,Low,High,High
+Amphetamine,2023,10.75,23.82,1,1,2,Medium,Medium,High
+Anthralic Acid,2023,0.0,0.0,0,0,1,Low,Low,Medium
+CBCS (In Kg),2023,0.0,8.7,0,0,2,Low,Low,High
+Cocaine,2023,39.77,7.49,1,0,2,Medium,Low,High
+Codeine,2023,129.83,43.5,1,2,2,Medium,High,High
+Ephedrine,2023,33.36,3925.24,1,2,2,Medium,High,High
+FENTANYL HCL,2023,0.0,0.0,0,0,1,Low,Low,Medium
+Ganja,2023,478936.0,690806.0,2,2,2,High,High,High
+Hashish,2023,1351.83,2928.31,2,2,2,High,High,High
+Hashish Oil,2023,46.45,37.02,1,2,2,Medium,High,High
+Heroin,2023,1380.12,1166.17,2,2,2,High,High,High
+Ketamine,2023,0.0,1.06,0,1,1,Low,Medium,Medium
+Khat Leaves,2023,0.0,0.0,0,0,1,Low,Low,Medium
+MDMA,2023,81.98,11.46,1,1,2,Medium,Medium,High
+Mephedrone,2023,3051.79,5.05,2,1,1,High,Medium,Medium
+Mescaline,2023,0.0,0.0,0,0,1,Low,Low,Medium
+Methaphetamine,2023,1292.44,1976.18,2,2,2,High,High,High
+Methaqualone,2023,14.07,3.93,1,1,1,Medium,Medium,Medium
+Morphine,2023,81.1,115.81,1,2,2,Medium,High,High
+Opium,2023,1179.74,860.58,2,2,2,High,High,High
+Other Drug/Psy Sub,2023,144.17,930.6,1,2,2,Medium,High,High
+Poppy Straw/Husk,2023,146631.0,49812.08,2,2,2,High,High,High
+Pseudo ephedrine,2023,95.58,1354.37,1,2,2,Medium,High,High
+Tablets (In Kg),2023,101.51,771.53,1,2,2,Medium,High,High

@@ -1,0 +1,51 @@
+project_name: AI-Based Drug Seizure Trend Analysis and Risk Classification
+dataset: RS_Session_266_AU_242_C_iii.csv
+dataset_information:
+  original_records: 30
+  usable_drug_records: 25
+  measurement_unit: kg
+  historical_years:
+  - '2019'
+  - '2020'
+  - '2021'
+  - '2022'
+  - '2023'
+  training_years:
+  - 2021
+  - 2022
+  testing_year: 2023
+features:
+- Previous_Log_Quantity
+- Previous_Log_Change
+- Year
+target: Risk_Class
+classification:
+  method: training_quantiles
+  classes:
+  - Low
+  - Medium
+  - High
+  low_threshold_kg: 7.893333333333332
+  medium_threshold_kg: 252.26333333333298
+  interpretation: Relative seizure volume, not actual crime or health risk
+random_forest:
+  n_estimators: 150
+  max_depth: 5
+  min_samples_leaf: 2
+  random_state: 42
+neural_network:
+  hidden_layers:
+  - 32
+  - 16
+  output_units: 3
+  activation: relu
+  output_activation: softmax
+  optimizer: adam
+  loss: sparse_categorical_crossentropy
+  epochs_max: 100
+  batch_size: 8
+output_files:
+  h5: drug_seizure_model.h5
+  pkl: drug_seizure_model.pkl
+  yaml: model_config.yaml
+  json: model_metrics.json

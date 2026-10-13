@@ -1,0 +1,73 @@
+{
+    "project": "AI-Based Drug Seizure Trend Analysis and Risk Classification",
+    "training_samples": 50,
+    "testing_samples": 25,
+    "training_years": [
+        2021,
+        2022
+    ],
+    "testing_year": 2023,
+    "class_distribution_training": {
+        "Low": 17,
+        "Medium": 16,
+        "High": 17
+    },
+    "class_distribution_testing": {
+        "Low": 7,
+        "Medium": 11,
+        "High": 7
+    },
+    "thresholds_kg": {
+        "low": 7.893333333333332,
+        "medium": 252.26333333333298
+    },
+    "random_forest": {
+        "model": "Random Forest",
+        "accuracy": 0.56,
+        "precision_weighted": 0.6173333333333333,
+        "recall_weighted": 0.56,
+        "f1_weighted": 0.5403846153846154
+    },
+    "neural_network": {
+        "model": "Neural Network",
+        "accuracy": 0.28,
+        "precision_weighted": 0.15619047619047616,
+        "recall_weighted": 0.28,
+        "f1_weighted": 0.18328888888888886
+    },
+    "random_forest_confusion_matrix": [
+        [
+            5,
+            1,
+            1
+        ],
+        [
+            1,
+            3,
+            7
+        ],
+        [
+            0,
+            1,
+            6
+        ]
+    ],
+    "neural_network_confusion_matrix": [
+        [
+            0,
+            5,
+            2
+        ],
+        [
+            0,
+            1,
+            10
+        ],
+        [
+            0,
+            1,
+            6
+        ]
+    ],
+    "evaluation_note": "Small exploratory dataset. Results should not be interpreted as validated operational risk predictions."
+}

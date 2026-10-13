@@ -1,0 +1,26 @@
+project: AI-Based Drug Seizure Trend Analysis and Risk Classification
+dataset: RS_Session_266_AU_242_C_iii.csv
+optimization: Particle Swarm Optimization
+n_particles: 12
+n_iterations: 20
+inertia: 0.7
+cognitive_coefficient: 1.5
+social_coefficient: 1.5
+selected_features: &id001
+- Previous_Log_Quantity
+best_parameters:
+  features: *id001
+  n_estimators: 41
+  max_depth: 8
+  min_samples_leaf: 4
+target: Risk_Class
+class_names:
+- Low
+- Medium
+- High
+training_years:
+- 2021
+- 2022
+testing_year: 2023
+forecast_year: 2024
+model_file: pso_model.pkl

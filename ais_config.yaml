@@ -1,0 +1,29 @@
+project: AI-Based Drug Seizure Trend Analysis and Risk Classification
+dataset: RS_Session_266_AU_242_C_iii.csv
+optimization_method: Artificial Immune System
+algorithm: CLONALG-inspired
+population_size: 12
+generations: 15
+elite_count: 4
+clones_per_elite: 4
+selected_features:
+- Previous_Log_Quantity
+best_antibody:
+  mask:
+  - 0
+  - 0
+  - 0
+  n_estimators: 68
+  max_depth: 3
+  min_samples_leaf: 1
+target: Risk_Class
+class_names:
+- Low
+- Medium
+- High
+training_years:
+- 2021
+- 2022
+testing_year: 2023
+forecast_year: 2024
+model_file: ais_model.pkl

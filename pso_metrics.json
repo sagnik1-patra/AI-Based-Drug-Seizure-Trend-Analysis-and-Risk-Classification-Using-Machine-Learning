@@ -1,0 +1,76 @@
+{
+    "project": "AI-Based Drug Seizure Trend Analysis and Risk Classification",
+    "optimization": "Particle Swarm Optimization",
+    "n_particles": 12,
+    "n_iterations": 20,
+    "inertia": 0.7,
+    "cognitive_coefficient": 1.5,
+    "social_coefficient": 1.5,
+    "best_fitness": 0.5875925925925926,
+    "selected_features": [
+        "Previous_Log_Quantity"
+    ],
+    "best_parameters": {
+        "features": [
+            "Previous_Log_Quantity"
+        ],
+        "n_estimators": 41,
+        "max_depth": 8,
+        "min_samples_leaf": 4
+    },
+    "training_samples": 50,
+    "testing_samples": 25,
+    "training_years": [
+        2021,
+        2022
+    ],
+    "testing_year": 2023,
+    "classification_thresholds_kg": {
+        "low": 7.893333333333332,
+        "medium": 252.26333333333298
+    },
+    "model_comparison": {
+        "PSO Random Forest": {
+            "accuracy": 0.56,
+            "precision": 0.6514285714285714,
+            "recall": 0.56,
+            "f1_score": 0.5591919191919191
+        },
+        "Baseline Random Forest": {
+            "accuracy": 0.52,
+            "precision": 0.54,
+            "recall": 0.52,
+            "f1_score": 0.47733333333333333
+        },
+        "Decision Tree": {
+            "accuracy": 0.48,
+            "precision": 0.4955555555555556,
+            "recall": 0.48,
+            "f1_score": 0.40269230769230774
+        },
+        "Logistic Regression": {
+            "accuracy": 0.52,
+            "precision": 0.5532307692307693,
+            "recall": 0.52,
+            "f1_score": 0.493
+        }
+    },
+    "confusion_matrix": [
+        [
+            4,
+            2,
+            1
+        ],
+        [
+            0,
+            4,
+            7
+        ],
+        [
+            0,
+            1,
+            6
+        ]
+    ],
+    "evaluation_note": "Exploratory classification with a small historical dataset. The categories describe relative seizure volume, not actual crime risk."
+}
